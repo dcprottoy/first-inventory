@@ -1,0 +1,81 @@
+
+/* Header Part */
+
+.header-part{
+    height:10vh;
+    width:100%;
+    background-color:salmon;
+}
+
+
+/* Body Part */
+.body-part{
+    height:85vh;
+    width:100%;
+    background-color: lightsteelblue;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Side Bar Part */
+.sidebar-part{
+    height:85vh;
+    width:225px;
+    background-color: aquamarine;
+}
+
+.sidebar-part.sidebar-open{
+    
+    margin-left:0px;
+    transition: .5s ease-in-out;
+    
+}
+
+.sidebar-part.sidebar-close{
+    
+    margin-left:-225px;
+    transition: .3s ease-in-out;
+    
+}
+
+/* Content Part */
+.content-part{
+    height: 85vh;
+    width:100%;
+    background-color: cadetblue;
+
+}
+
+/* Notification Part */
+.notification-part{
+    height:8vh;
+    width: 300px;
+    right:0;
+    background-color: aqua;
+    position: absolute;
+    z-index: 5;
+
+}
+
+
+.notification-part.show-notification{
+    margin-right: 0px;
+    transition: .5s ease-in-out;
+}
+
+.notification-part.close-notification{
+    margin-right: -300px;
+    transition: .2s ease-in-out;
+}
+
+/* Footer Part */
+
+.footer-part{
+
+height: 5vh;
+width: 100%;
+background-color: black;
+
+
+}

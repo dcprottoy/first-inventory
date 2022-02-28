@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Header from './components/layout/header';
 import Sidebar from './components/layout/sidebar';
 import  Content  from './components/layout/content';
+import  Layout  from './components/layout/baseLayout';
 import React,{useState} from 'react';
 function App() {
 
@@ -11,12 +12,13 @@ function App() {
 
   return (
     <div className="App">
+      <Layout/>
      
-     <Header setSideBarOpen={setSideBarOpen} sideBarOpen={sideBarOpen}/>
+     {/* <Header setSideBarOpen={setSideBarOpen} sideBarOpen={sideBarOpen}/>
      <div style={{display:'flex'}}>
       <Sidebar sideBarOpen={sideBarOpen}/>
       <Content/>
-      </div>
+      </div> */}
     </div>
   );
 }
