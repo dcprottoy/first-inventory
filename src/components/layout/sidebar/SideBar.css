@@ -1,0 +1,11 @@
+.side-bar{
+    height: 90vh;
+    width:225px;
+    background-color:red;
+    margin-left:-225px;
+    transition: .3s ease-in-out;
+}
+.side-bar.open-side{
+    margin-left:0px;
+    transition: .5s ease-in-out;
+}
