@@ -1,35 +1,34 @@
-import React,{useState} from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import './index.css';
 
-const Main = () =>{
-    const [sideBarOpen,setSideBarOpen] = useState(false);
-    const [notificationShow,setNotificationShow] = useState(false);
+import Header from '../header'
 
-    const showNotification = () =>{
-        setNotificationShow(notificationShow => {return !notificationShow});
-        const myClick = setTimeout(()=>{
-            setNotificationShow(notificationShow => {return !notificationShow});
-            clearTimeout(myClick);
-        }, 1000);
-        
-    }
+const Main = () =>{
+   
+    const value = useSelector(state =>  state.Application);
+    const sideBarValue = value.sidebar;
+    const notificationValue = value.notification;
+   
+    
+   
     return (
     <div>
         <div className="header-part">
-        Header Part
+        <Header/>
         </div>
-        
+      
         <div className='body-part'>
-            <div className={`sidebar-part ${sideBarOpen ? 'sidebar-open':'sidebar-close'}`}>
+            <div className={`sidebar-part ${sideBarValue ? 'sidebar-open':'sidebar-close'}`}>
                 Side Bar Part
             </div>
 
             <div className='content-part'>
                  Content Part
-                 <button onClick={()=> setSideBarOpen(!sideBarOpen)}>Click Me !</button>
+                
             </div>
 
-            <div className={`notification-part ${notificationShow ?"show-notification":"close-notification"}`}>
+            <div className={`notification-part ${notificationValue ?"show-notification":"close-notification"}`}>
                 Notification Part
             </div>
         </div>

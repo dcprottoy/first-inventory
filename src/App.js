@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Header from './components/layout/header';
-import Sidebar from './components/layout/sidebar';
-import  Content  from './components/layout/content';
 import  Layout  from './components/layout/baseLayout';
 import React,{useState} from 'react';
+import store from './redux/store/store';
+import {Provider} from 'react-redux'
+
 function App() {
 
-  const [sideBarOpen,setSideBarOpen] = useState(true);
-
   return (
-    <div className="App">
-      <Layout/>
-     
-     {/* <Header setSideBarOpen={setSideBarOpen} sideBarOpen={sideBarOpen}/>
-     <div style={{display:'flex'}}>
-      <Sidebar sideBarOpen={sideBarOpen}/>
-      <Content/>
-      </div> */}
+    <div className="App" >
+      <Provider store={store}>
+        <Layout/>
+      </Provider>
     </div>
   );
 }
