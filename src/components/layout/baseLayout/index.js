@@ -2,7 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import './index.css';
 
-import Header from '../header'
+import Header from '../header';
+import Sidebar from '../sidebar';
 
 const Main = () =>{
    
@@ -20,7 +21,7 @@ const Main = () =>{
       
         <div className='body-part'>
             <div className={`sidebar-part ${sideBarValue ? 'sidebar-open':'sidebar-close'}`}>
-                Side Bar Part
+                <Sidebar/>
             </div>
 
             <div className='content-part'>

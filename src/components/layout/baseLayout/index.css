@@ -4,7 +4,8 @@
 .header-part{
     height:10vh;
     width:100%;
-    background-color:salmon;
+    margin-bottom: .1em;
+    
 }
 
 
@@ -12,7 +13,7 @@
 .body-part{
     height:85vh;
     width:100%;
-    background-color: lightsteelblue;
+    /* background-color: lightsteelblue; */
     display: flex;
     position: relative;
     overflow: hidden;
@@ -22,7 +23,7 @@
 .sidebar-part{
     height:85vh;
     width:225px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .sidebar-part.sidebar-open{
@@ -43,7 +44,7 @@
 .content-part{
     height: 85vh;
     width:100%;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 
 }
 
@@ -52,7 +53,7 @@
     height:8vh;
     width: 300px;
     right:0;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: absolute;
     z-index: 5;
 

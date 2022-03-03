@@ -1,5 +1,5 @@
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import 'antd/dist/antd.css';
 import  Layout  from './components/layout/baseLayout';
 import React,{useState} from 'react';
 import store from './redux/store/store';
