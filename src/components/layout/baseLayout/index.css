@@ -2,26 +2,27 @@
 /* Header Part */
 
 .header-part{
-    height:10vh;
+    height:6.7vh;
     width:100%;
     margin-bottom: .1em;
-    
+    background-color: red;
 }
 
 
 /* Body Part */
 .body-part{
-    height:85vh;
+    height:88.1vh;
     width:100%;
     /* background-color: lightsteelblue; */
     display: flex;
     position: relative;
     overflow: hidden;
+    margin-bottom: .1em;
 }
 
 /* Side Bar Part */
 .sidebar-part{
-    height:85vh;
+    height:88.1vh;
     width:225px;
     /* background-color: aquamarine; */
 }
@@ -42,7 +43,7 @@
 
 /* Content Part */
 .content-part{
-    height: 85vh;
+    height: 88.1vh;
     width:100%;
     /* background-color: cadetblue; */
 
@@ -74,7 +75,7 @@
 
 .footer-part{
 
-height: 5vh;
+height: 4.8vh;
 width: 100%;
 background-color: black;
 

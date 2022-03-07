@@ -23,16 +23,18 @@ import { UserOutlined,MenuFoldOutlined } from '@ant-design/icons';
        return (
               <div >
                      
-                     <Header style={{height:'10vh',backgroundColor:'#14213d',padding:0,display:'flex',alignItems:'center'}}>
-                            <div style={{backgroundColor:'#468faf',width:'225px',height:'10vh',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                                   <Title level={4} style={{color:'white'}}>FIRST INVENTORY</Title>
+                     <Header style={{backgroundColor:'#002766',padding:0,paddingRight:'.3em',display:'flex',alignItems:'center',height:'6.7vh'}}>
+                            <div style={{backgroundColor:'inherit',width:'225px',display:'flex',alignItems:'center',justifyContent:'center',borderRight:'2px white solid'}}>
+                                   <Title level={4} style={{color:'whitesmoke'}}>FIRST INVENTORY</Title>
                             </div>
 
-                            <div style={{backgroundColor:'#468faf',height:'10vh',display:'flex',alignItems:'center',justifyContent:'center'}}>
-                                   <MenuFoldOutlined style={{ fontSize: '32px',color:'whitesmoke'}}/>
+                            <div style={{display:'flex',alignItems:'center',justifyContent:'center',userSelect:'none',color:'white',fontSize: '18px',marginLeft:'1em'}} onClick={()=>menuHandler()}>
+                                   <Title level={5} style={{color:'white'}}> <MenuFoldOutlined />{"  "}Menu</Title>
                             </div>
-                           
-                            <Avatar size={32} icon={<UserOutlined />} onClick={()=>menuHandler()} />
+                            <div style={{flexGrow:1}}>
+
+                            </div>
+                            <Avatar size={32} icon={<UserOutlined />}  />
                      </Header>
                             
               </div>
